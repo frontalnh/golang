@@ -27,3 +27,7 @@ Also, you can specify runtime os with `GOOS` Environment variable like
 ## Execute
 
 `go run main.go`
+
+## Test
+
+`go test -v <DIR>/<DIR>`
