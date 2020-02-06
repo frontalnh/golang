@@ -6,11 +6,18 @@ import (
 )
 
 type Person struct {
-	Name string
+	Name  string
+	Items []interface{}
 }
 
 func main() {
-	person := &Person{Name: "namhoon"}
+	person := &Person{Name: "namhoon", Items: []interface{}{
+		map[string]string{
+			"Apple": "Applie",
+		},
+	}}
+
+	fmt.Println(person)
 
 	jsonEncoded, _ := json.Marshal(person)
 

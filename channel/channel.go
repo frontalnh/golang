@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	messages := make(chan string)
+	messages := make(chan string, 3)
 
 	go func() {
 		// time.After(4 * time.Second)
