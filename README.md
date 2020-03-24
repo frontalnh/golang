@@ -15,6 +15,12 @@ Go/
   src/
 ```
 
+## Install package
+
+```sh
+go get github.com/tj/assert
+```
+
 ## Build
 
 You can build go project with `go build` command.
